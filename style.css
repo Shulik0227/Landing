@@ -1,28 +1,30 @@
-body{
-    background-color:#4F4F4F;
+body {
+    background-color: #000;
     color: #fff;
     font-family: "Montserrat", sans-serif;
     padding: 0;
     margin: 0;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
-li{
+
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
 }
 
-.nav{
+.nav {
     display: flex;
 }
-.nav__link{
+
+.nav__link {
     font-size: 12px;
     font-weight: 700;
     line-height: 14.6px;
@@ -31,27 +33,32 @@ a{
     text-decoration: none;
     color: #fff;
     margin-left: 40px;
+    transition: color 0, 3s;
 }
 
+.nav__link:hover {
+    color: #F05638;
+}
 
-.header__logo{
+.header__logo {
     font-size: 29px;
     line-height: 35.35px;
     font-weight: 700;
 }
-.header__logo span{
+
+.header__logo span {
     font-family: "Playfair Display", serif;
     color: rgb(243, 178, 1);
     font-weight: 600;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.header{
+.header {
     width: 100%;
     padding-top: 55px;
     position: absolute;
@@ -61,31 +68,32 @@ a{
     z-index: 1000;
 }
 
-.header__inner{
+.header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
 }
 
-.intro__inner{ 
+.intro__inner {
     display: flex;
     width: 100%;
     height: 720px;
     align-items: center;
 }
 
-.intro{
+.intro {
     background: url(image.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right top;
 }
 
-.intro__content{
+.intro__content {
     z-index: 2;
 }
-.intro__title{
+
+.intro__title {
     font-weight: 700;
     font-size: 60px;
     line-height: 74px;
@@ -94,7 +102,7 @@ a{
     margin-bottom: 74px;
 }
 
-.intro__btn{
+.intro__btn {
     display: inline-block;
     padding: 14px 32px;
     border-radius: 20px;
@@ -107,26 +115,27 @@ a{
 
 
 /*card*/
-.cards{
+.cards {
     background-color: #fff;
     color: #212121;
     padding: 111px 0;
 }
 
-.cards__summery{
+.cards__summery {
     text-align: center;
     margin-bottom: 60px;
 }
-.cards__subtitle{
+
+.cards__subtitle {
     font-size: 12px;
     line-height: 14.6px;
     letter-spacing: 2.4px;
     text-transform: uppercase;
-    color:#9FA3A7 ;
+    color: #9FA3A7;
     margin-bottom: 18px;
 }
 
-.cards__title{
+.cards__title {
     font-family: 'Arvo';
     font-size: 36px;
     line-height: 48px;
@@ -134,7 +143,7 @@ a{
 }
 
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,28 +155,32 @@ a{
 
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     cursor: pointer;
 }
-.card__content{
+
+.card__content {
     text-align: center;
     width: 250px;
 }
-.cards__content{
+
+.cards__content {
     display: flex;
     justify-content: space-between;
 }
-.card__img img{
-   width: 250px;
-   height: 180px;
+
+.card__img img {
+    width: 250px;
+    height: 180px;
 }
-.card__img{
+
+.card__img {
     margin-bottom: 22px;
 }
 
-.card__title{
+.card__title {
     font-size: 12px;
     line-height: 14.63px;
     letter-spacing: 2.4px;
@@ -175,19 +188,27 @@ a{
     margin-bottom: 17px;
 }
 
-.card__text{
+.card__text {
     font-family: "Arvo";
     font-size: 14px;
     line-height: 26px;
     color: #9FA3A7;
 }
-.info__wind{
-   background: url(BG.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   padding: 116px 0;
+
+.card__special_symbol {
+    color: #8F75BE;
+    border: 3px solid #FFC80A;
+    border-radius: 40px;
 }
-.info__wind_text{
+
+.info__wind {
+    background: url(BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 116px 0;
+}
+
+.info__wind_text {
     font-family: Arvo;
     font-size: 24px;
     line-height: 32px;
@@ -195,7 +216,8 @@ a{
     color: #212121;
     margin-right: 28px;
 }
-.info__wind__content{
+
+.info__wind__content {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -204,7 +226,7 @@ a{
     border-radius: 10px;
 }
 
-.info__btn{
+.info__btn {
     color: #212121;
     margin-right: 14px;
     font-size: 12px;
@@ -218,36 +240,82 @@ a{
     text-transform: uppercase;
 }
 
-.active{
-    background-color:#F05638;
+.active {
+    background-color: #F05638;
     color: #FFF;
     border: 2px solid #F05638;
 }
+
 /* .info__wind__btn{
     margin-top: 182px;
 } */
-.btn-1{
-        font-size: 12px;
-        line-height: 14.63px;
-        letter-spacing: 2.4px;
-        color: #212121;;
-        background-color:#fff;
-        border-radius: 20px;
-        padding: 14px 31px;
-        border: #EDEDED;
-        border: 2px;
-        margin-left: 28px;    
-        margin-right: 14px; 
+.btn-1 {
+    font-size: 12px;
+    line-height: 14.63px;
+    letter-spacing: 2.4px;
+    color: #212121;
+    ;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 14px 31px;
+    border: #EDEDED;
+    border: 2px;
+    margin-left: 28px;
+    margin-right: 14px;
 }
+
 .btn-2 {
     font-size: 12px;
     line-height: 14.63px;
     letter-spacing: 2.4px;
     color: #FFFFFF;
-    
+
     border-radius: 20px;
-    padding: 14px 31px;   
+    padding: 14px 31px;
 }
 
-/*card*/
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    margin-top: 92px;
+    border: 1px #c70e0e;
+}
 
+.footer__logo {
+    font-size: 29px;
+    line-height: 35.35px;
+    font-weight: 700;
+}
+
+.footer__logo span {
+    font-family: "Playfair Display", serif;
+    color: rgb(243, 178, 1);
+    font-weight: 600;
+}
+
+.social__networks ul {
+    display: flex;
+}
+
+.social__link {
+    padding-left: 30px;
+    color: #fff;
+}
+
+u {
+    margin-top: 72px;
+    display: flex;
+    justify-content: center;
+}
+
+.date__of__creation {
+    font-family: "Open";
+    font-size: 14px;
+    line-height: 22px;
+    color: #c8c8c8;
+    display: flex;
+    justify-content: center;
+    margin-top: 62px;
+}
